@@ -6,6 +6,8 @@ This guid records my personal setup for WSL on a Windows10 computer. It is a rem
   - [WSL](#wsl)
   - [Visual Studio Code](#visual-studio-code)
   - [Git](#git)
+  - [Tools](#tools)
+    - [wsl-open](#wsl-open)
 
 ## WSL
 
@@ -40,3 +42,21 @@ Most Linux distributions has a pre-installed version of [Git](http://git-scm.com
 4. Run Xming.
 
 5. Run `gitk`.
+
+## Tools
+
+I found some useful tools on WSL:
+
+### wsl-open
+
+[wsl-open](https://github.com/4U6U57/wsl-open) can open file/directory/URL with Windows GUI application from terminal.
+
+``` bash
+# install
+npm install -g wsl-open
+
+# usage
+wsl-open README.txt
+wsl-open /mnt/c/Users/Administrator/Documents/
+wsl-open https://www.mytrainpal.com
+```
