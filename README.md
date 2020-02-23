@@ -6,6 +6,10 @@ This guid records my personal setup for WSL on a Windows10 computer. It is a rem
   - [WSL](#wsl)
   - [Visual Studio Code](#visual-studio-code)
   - [Git](#git)
+  - [Java](#java)
+    - [install](#install)
+    - [environment variables](#environment-variables)
+      - [JAVA_HOME](#javahome)
   - [Tools](#tools)
     - [wsl-open](#wsl-open)
 
@@ -42,6 +46,26 @@ Most Linux distributions has a pre-installed version of [Git](http://git-scm.com
 4. Run Xming.
 
 5. Run `gitk`.
+
+## Java
+
+### install
+
+Download [Linux open JDK release](https://jdk.java.net/13/).
+
+``` bash
+tar -xf openjdk-13.0.2_linux-x64_bin.tar.gz
+
+mv path-to-download/jdk-13.0.2/ /usr/lib/jdk-13.0.2/
+
+echo -e "\nexport JAVA_HOME='/usr/lib/jdk-13.0.2/'\nexport PATH=\$PATH:\$JAVA_HOME/bin/" >> ~/.bashrc
+```
+
+### environment variables
+
+#### JAVA_HOME
+
+`JAVA_HOME` is just a convention, usually used by Tomcat, other Java EE app servers and build tools such as Gradle to find where Java lives.
 
 ## Tools
 
