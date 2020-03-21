@@ -10,6 +10,9 @@ This guid records my personal setup for WSL on a Windows10 computer. It is a rem
     - [install](#install)
     - [environment variables](#environment-variables)
       - [JAVA_HOME](#javahome)
+  - [IntelliJ IDEA](#intellij-idea)
+    - [commandline launcher](#commandline-launcher)
+    - [switch to wsl terminal](#switch-to-wsl-terminal)
   - [Tools](#tools)
     - [wsl-open](#wsl-open)
 
@@ -66,6 +69,18 @@ echo -e "\nexport JAVA_HOME='/usr/lib/jdk-13.0.2/'\nexport PATH=\$PATH:\$JAVA_HO
 #### JAVA_HOME
 
 `JAVA_HOME` is just a convention, usually used by Tomcat, other Java EE app servers and build tools such as Gradle to find where Java lives.
+
+## IntelliJ IDEA
+
+### commandline launcher
+
+``` bash
+echo -e "\nalias idea=\"/mnt/c/Program\ Files/JetBrains/IntelliJ\ IDEA\ Community\ Edition\ 2019.3.4/bin/idea64.exe\"" >> ~/.bashrc
+```
+
+### switch to wsl terminal
+
+`Settings -> Tools -> Terminal` change `cmd.exe` to `C:\Windows\System32\bash.exe`.
 
 ## Tools
 
